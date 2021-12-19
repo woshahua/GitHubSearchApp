@@ -9,12 +9,18 @@
 /* Begin PBXBuildFile section */
 		BD8481D12768468800A5F471 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD8481D02768468800A5F471 /* AppDelegate.swift */; };
 		BD8481D32768468800A5F471 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD8481D22768468800A5F471 /* SceneDelegate.swift */; };
-		BD8481D52768468800A5F471 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD8481D42768468800A5F471 /* ViewController.swift */; };
-		BD8481D82768468800A5F471 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BD8481D62768468800A5F471 /* Main.storyboard */; };
 		BD8481DA2768468900A5F471 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BD8481D92768468900A5F471 /* Assets.xcassets */; };
 		BD8481DD2768468900A5F471 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BD8481DB2768468900A5F471 /* LaunchScreen.storyboard */; };
 		BD8481E82768468900A5F471 /* GitHubSearchAppTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD8481E72768468900A5F471 /* GitHubSearchAppTests.swift */; };
 		BD8481F32768468900A5F471 /* GitHubSearchAppUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD8481F22768468900A5F471 /* GitHubSearchAppUITests.swift */; };
+		BD848201276859DC00A5F471 /* RepositorySearch.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BD848200276859DC00A5F471 /* RepositorySearch.storyboard */; };
+		BD8482032768637500A5F471 /* RepositorySearchViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD8482022768637500A5F471 /* RepositorySearchViewController.swift */; };
+		BD84820527687F0D00A5F471 /* Request.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD84820427687F0D00A5F471 /* Request.swift */; };
+		BD84820A276B341E00A5F471 /* HTTPClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD848209276B341E00A5F471 /* HTTPClient.swift */; };
+		BD84820E276BA5D400A5F471 /* GithubRepoGetAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD84820D276BA5D400A5F471 /* GithubRepoGetAPI.swift */; };
+		BD848214276BBA2A00A5F471 /* RepositoryDataList.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD848213276BBA2A00A5F471 /* RepositoryDataList.swift */; };
+		BD848216276BBA5300A5F471 /* RepositoryData.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD848215276BBA5300A5F471 /* RepositoryData.swift */; };
+		BD848219276C1A9700A5F471 /* DispatchQueue+Debouncer.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD848218276C1A9700A5F471 /* DispatchQueue+Debouncer.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -38,8 +44,6 @@
 		BD8481CD2768468800A5F471 /* GitHubSearchApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = GitHubSearchApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		BD8481D02768468800A5F471 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		BD8481D22768468800A5F471 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		BD8481D42768468800A5F471 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		BD8481D72768468800A5F471 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		BD8481D92768468900A5F471 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		BD8481DC2768468900A5F471 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		BD8481DE2768468900A5F471 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -49,6 +53,14 @@
 		BD8481EE2768468900A5F471 /* GitHubSearchAppUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = GitHubSearchAppUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		BD8481F22768468900A5F471 /* GitHubSearchAppUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GitHubSearchAppUITests.swift; sourceTree = "<group>"; };
 		BD8481F42768468900A5F471 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		BD848200276859DC00A5F471 /* RepositorySearch.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = RepositorySearch.storyboard; sourceTree = "<group>"; };
+		BD8482022768637500A5F471 /* RepositorySearchViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RepositorySearchViewController.swift; sourceTree = "<group>"; };
+		BD84820427687F0D00A5F471 /* Request.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Request.swift; sourceTree = "<group>"; };
+		BD848209276B341E00A5F471 /* HTTPClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HTTPClient.swift; sourceTree = "<group>"; };
+		BD84820D276BA5D400A5F471 /* GithubRepoGetAPI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GithubRepoGetAPI.swift; sourceTree = "<group>"; };
+		BD848213276BBA2A00A5F471 /* RepositoryDataList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RepositoryDataList.swift; sourceTree = "<group>"; };
+		BD848215276BBA5300A5F471 /* RepositoryData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RepositoryData.swift; sourceTree = "<group>"; };
+		BD848218276C1A9700A5F471 /* DispatchQueue+Debouncer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "DispatchQueue+Debouncer.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -101,8 +113,11 @@
 			children = (
 				BD8481D02768468800A5F471 /* AppDelegate.swift */,
 				BD8481D22768468800A5F471 /* SceneDelegate.swift */,
-				BD8481D42768468800A5F471 /* ViewController.swift */,
-				BD8481D62768468800A5F471 /* Main.storyboard */,
+				BD848200276859DC00A5F471 /* RepositorySearch.storyboard */,
+				BD8482022768637500A5F471 /* RepositorySearchViewController.swift */,
+				BD848217276C1A7C00A5F471 /* Extension */,
+				BD84820B276B35FF00A5F471 /* Model */,
+				BD8482082769A45100A5F471 /* Network */,
 				BD8481D92768468900A5F471 /* Assets.xcassets */,
 				BD8481DB2768468900A5F471 /* LaunchScreen.storyboard */,
 				BD8481DE2768468900A5F471 /* Info.plist */,
@@ -126,6 +141,41 @@
 				BD8481F42768468900A5F471 /* Info.plist */,
 			);
 			path = GitHubSearchAppUITests;
+			sourceTree = "<group>";
+		};
+		BD8482082769A45100A5F471 /* Network */ = {
+			isa = PBXGroup;
+			children = (
+				BD84820C276BA5A000A5F471 /* API */,
+				BD84820427687F0D00A5F471 /* Request.swift */,
+				BD848209276B341E00A5F471 /* HTTPClient.swift */,
+			);
+			path = Network;
+			sourceTree = "<group>";
+		};
+		BD84820B276B35FF00A5F471 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				BD848213276BBA2A00A5F471 /* RepositoryDataList.swift */,
+				BD848215276BBA5300A5F471 /* RepositoryData.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		BD84820C276BA5A000A5F471 /* API */ = {
+			isa = PBXGroup;
+			children = (
+				BD84820D276BA5D400A5F471 /* GithubRepoGetAPI.swift */,
+			);
+			path = API;
+			sourceTree = "<group>";
+		};
+		BD848217276C1A7C00A5F471 /* Extension */ = {
+			isa = PBXGroup;
+			children = (
+				BD848218276C1A9700A5F471 /* DispatchQueue+Debouncer.swift */,
+			);
+			path = Extension;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -231,9 +281,9 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				BD848201276859DC00A5F471 /* RepositorySearch.storyboard in Resources */,
 				BD8481DD2768468900A5F471 /* LaunchScreen.storyboard in Resources */,
 				BD8481DA2768468900A5F471 /* Assets.xcassets in Resources */,
-				BD8481D82768468800A5F471 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -258,8 +308,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				BD8481D52768468800A5F471 /* ViewController.swift in Sources */,
+				BD8482032768637500A5F471 /* RepositorySearchViewController.swift in Sources */,
+				BD848216276BBA5300A5F471 /* RepositoryData.swift in Sources */,
+				BD848219276C1A9700A5F471 /* DispatchQueue+Debouncer.swift in Sources */,
+				BD84820E276BA5D400A5F471 /* GithubRepoGetAPI.swift in Sources */,
+				BD84820527687F0D00A5F471 /* Request.swift in Sources */,
+				BD848214276BBA2A00A5F471 /* RepositoryDataList.swift in Sources */,
 				BD8481D12768468800A5F471 /* AppDelegate.swift in Sources */,
+				BD84820A276B341E00A5F471 /* HTTPClient.swift in Sources */,
 				BD8481D32768468800A5F471 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -296,14 +352,6 @@
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
-		BD8481D62768468800A5F471 /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				BD8481D72768468800A5F471 /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		BD8481DB2768468900A5F471 /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
